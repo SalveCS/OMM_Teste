@@ -128,7 +128,7 @@ const EnergiaSalgadaSection = () => {
           <div className={`relative transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <div className="relative">
               {/* Floating Elements */}
-              <div className="relative h-[500px] w-full flex flex-wrap justify-center items-center gap-8">
+              <div className="grid grid-cols-2 gap-8 h-[500px] w-full justify-center items-center">
                 {energyElements.map((element, index) => {
                   return (
                     <div 
