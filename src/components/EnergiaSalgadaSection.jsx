@@ -128,12 +128,12 @@ const EnergiaSalgadaSection = () => {
           <div className={`relative transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <div className="relative">
               {/* Floating Elements */}
-              <div className="grid grid-cols-2 gap-8 h-[500px] w-full justify-center items-center">
+              <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 w-full">
                 {energyElements.map((element, index) => {
                   return (
                     <div 
                       key={index}
-                      className={`glass-effect rounded-xl p-6 w-56 h-48 hover-scale transition-all duration-300 hover:border-cyan-400/50 border border-white/20 flex flex-col justify-center items-center text-center`}
+                      className={`glass-effect rounded-xl p-6 w-full max-w-sm mx-auto md:w-56 h-48 hover-scale transition-all duration-300 hover:border-cyan-400/50 border border-white/20 flex flex-col justify-center items-center text-center mb-4 md:mb-0`}
                       style={{
                         animation: `float ${3 + index * 0.5}s ease-in-out infinite`,
                         animationDelay: `${index * 0.5}s`
