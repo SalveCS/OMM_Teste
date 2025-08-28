@@ -39,7 +39,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a 
-                href="mailto:ondamaremato@gmail.com" 
+                href="mailto:contato@ondamaremato.com" 
                 className="bg-white/10 hover:bg-cyan-500 text-white p-3 rounded-full transition-all duration-300 hover-scale"
               >
                 <Mail size={20} />
@@ -53,8 +53,8 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <button 
-                  onClick={() => scrollToSection('inicio')}
-                  className="text-gray-300 hover:text-cyan-300 transition-colors cursor-pointer"
+                  onClick={() => scrollToSection('home')}
+                  className="text-gray-300 hover:text-cyan-300 transition-colors"
                 >
                   Início
                 </button>
@@ -62,7 +62,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('cascudo')}
-                  className="text-gray-300 hover:text-cyan-300 transition-colors cursor-pointer"
+                  className="text-gray-300 hover:text-cyan-300 transition-colors"
                 >
                   Cascudo
                 </button>
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('energia-salgada')}
-                  className="text-gray-300 hover:text-cyan-300 transition-colors cursor-pointer"
+                  className="text-gray-300 hover:text-cyan-300 transition-colors"
                 >
                   Energia Salgada
                 </button>
@@ -78,7 +78,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('sobre')}
-                  className="text-gray-300 hover:text-cyan-300 transition-colors cursor-pointer"
+                  className="text-gray-300 hover:text-cyan-300 transition-colors"
                 >
                   Sobre
                 </button>
