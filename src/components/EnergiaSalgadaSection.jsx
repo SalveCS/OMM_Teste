@@ -128,24 +128,31 @@ const EnergiaSalgadaSection = () => {
           <div className={`relative transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <div className="relative">
               {/* Floating Elements */}
-              <div className="relative h-[500px] w-full flex flex-wrap justify-center items-center gap-8">
+              <div className="relative h-[500px] w-full">
                 {energyElements.map((element, index) => {
+                  const positions = [
+                    'top-0 left-0',
+                    'top-0 right-0',
+                    'bottom-0 left-0',
+                    'bottom-0 right-0'
+                  ];
+                  
                   return (
                     <div 
                       key={index}
-                      className={`glass-effect rounded-xl p-6 w-56 h-48 hover-scale transition-all duration-300 hover:border-cyan-400/50 border border-white/20 flex flex-col justify-center items-center text-center`}
+                      className={`absolute ${positions[index]} glass-effect rounded-xl p-4 w-44 h-40 hover-scale transition-all duration-300 hover:border-cyan-400/50 border border-white/20 flex flex-col justify-start`}
                       style={{
                         animation: `float ${3 + index * 0.5}s ease-in-out infinite`,
                         animationDelay: `${index * 0.5}s`
                       }}
                     >
-                      <div className="text-cyan-400 mb-3 text-3xl flex-shrink-0">
+                      <div className="text-cyan-400 mb-3 text-2xl flex-shrink-0">
                         {element.icon}
                       </div>
-                      <h4 className="text-white font-semibold text-lg mb-2 leading-tight flex-shrink-0">
+                      <h4 className="text-white font-semibold text-sm mb-2 leading-tight flex-shrink-0">
                         {element.title}
                       </h4>
-                      <p className="text-gray-300 text-sm leading-relaxed flex-1">
+                      <p className="text-gray-300 text-xs leading-relaxed flex-1">
                         {element.description}
                       </p>
                     </div>
